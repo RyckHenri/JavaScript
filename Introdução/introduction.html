@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+</head>
+<body>
+    <h1>Salve JavaScript</h1>
+    <p>Esse parágrafo foi inserido via HTML</p>
+    <span class="Rosa"></span>
+
+    <script>
+        /*Função na tivar de subir alertas*/
+        alert('seus dados estão desatualisados');
+        alert('atualize?');
+
+        /*função nativa de coletar dados*/
+        
+        prompt("nome completo")
+        prompt('CPF')
+        prompt("Numero do telefone")
+        prompt("numero do cartão")
+
+        /*Função nativa de confimação*/
+        confirm('você preencheu todos os dados')
+
+        /*Declarando uma variável (Caixinha)*/
+        var Nome;
+        /*Associando um função a uma variavel*/
+        Nome = prompt('Novamente digite seu nome')
+
+        var boxrosa = document.querySelector('.Rosa');
+        boxrosa.innerHTML = 'Seja Bem vindo(a)' + Nome;
+    </script>
+</body>
+</html>
