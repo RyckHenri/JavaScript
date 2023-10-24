@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo String</title>
+</head>
+<body>
+    <script>
+        //Declaraçaõ das Variáveis
+        let salve,texto1,rimaNyck,happy;
+
+        //Iniciar as variáveis
+        salve = 'Olá vamos começar a aprender javarcript';
+        texto1 = 'osh haham isso não peraeee! Meteu o loko';
+        rimaNyck ='Ih eu sei haham sei não o que rima com C';
+        happy = 'comida o pensamento vai em você é tentativas em vão tirar você do coração'
+
+
+        //Aprendendo conteúdo do documento
+        //Modelo antigo
+        document.write(salve + '' + texto1);
+        //versão mais atual, Templete String
+        document.write('<br><br>')
+        //Possibilidade de interpolação
+        document.write(`${salve} com o IOS`);
+        document.write('Olhe o console');
+
+        //Método de string
+        console.log(salve.length),//Retona oa temanhos da variavel
+        console.log(texto1.length);
+        console.log(rimaNyck.length);
+        console.log(happy.length);
+
+        console.log(texto1.substring(30));//Retona parte da string
+
+        console.log(rimaNyck.split(' '));//Separa a frase em palavras
+        let novotexto = rimaNyck.split(' ');//Retona um array com as aplavras
+        console.log(novotexto[2]);//Ultiliza os caracteri como divisor
+        console.log(happy.split('e'));
+
+        console.log(rimaNyck.replace('sei','tu sabia'));
+        happy = '    oi..    ';
+        console.log(happy);
+        console.log(happy.trim())
+    </script>
+</body>
+</html>
