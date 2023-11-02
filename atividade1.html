@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <script>
+        let escolha;
+
+        do{
+            escolha = prompt(
+                "Escolha um opição:\n" +
+                "1. opição 1\n" +
+                "2. opição 2\n" +
+                "3. Sair"
+            );
+
+            if (escolha == "1"){
+                alert ("Você escolheu a opição 1");
+            }
+            else if (escolha == "2"){
+                alert ("Você escolheu a opição 2");
+            }
+            else if (escolha == "3"){
+                alert ("Saindo do menu. ate logo");
+            }
+            else{
+                alert ("Opição invalida.Tente de novo");
+            }
+        }while (escolha !== "3");
+    </script>
+</body>
+</html>
